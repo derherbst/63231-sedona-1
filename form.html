@@ -34,21 +34,21 @@
         </article>
         <form class="review-form" action="#" method="post">
           <fieldset class="review-form__item introducing">
-            <legend class="review-form__item__title">Представьтесь, пожалуйста:</legend>
+            <legend class="review-form__title">Представьтесь, пожалуйста:</legend>
             <label class="introducing__label">Имя: <input class="introducing__input" type="text" name="name" value="Петр"></label>
             <label class="introducing__label">Фамилия: <input class="introducing__input" type="text" name="surname" value="Иванов"></label>
             <label class="introducing__label">Отчетство: <input class="introducing__input" type="text" name="second-name" value="Александрович"></label>
           </fieldset>
           <fieldset class="review-form__item contacts">
-            <legend class="review-form__item__title">Контактная информация:</legend>
+            <legend class="review-form__title">Контактная информация:</legend>
             <label class="contacts__label">Контактный телефон:<input class="contacts__input contacts__input--tel" type="tel" value="Введите телефон" name="phone-number"></label>
-            <span></span>
-            <small>Ошибка, перепроверьте номер</small>
+            <span class="contacts--phone-icon"></span>
+            <small class="error">Ошибка, перепроверьте номер</small>
             <label class="contacts__label"><input class="contacts__input contacts__input--e-mail" type="email" value="Введите e-mail" name="e-mail"></label>
-            <span></span>
+            <span class="contacts--email-icon"></span>
           </fieldset>
           <fieldset class="review-form__item impression">
-            <legend class="review-form__item__title">Ваше общее впечатление:</legend>
+            <legend class="review-form__title">Ваше общее впечатление:</legend>
             <input class="impression__input" type="radio" value="positive" name="positive" id="positive" checked>
             <label class="impression__label" for="positive">Скорее положительное</label>
             <input class="impression__input" type="radio" value="negative" name="negative" id="positive">
@@ -57,7 +57,7 @@
             <label class="impression__label" for="middle">Затрудняюсь ответить</label>
           </fieldset>
           <fieldset class="review-form__item sights">
-            <legend class="review-form__item__title">Посещенные достопримечательности:</legend>
+            <legend class="review-form__title">Посещенные достопримечательности:</legend>
             <input class="sights__input" type="checkbox" name="bridge" id="bridge" checked>
             <label class="sights__label" for="bridge">Мост Дьявола</label>
             <input class="sights__input" type="checkbox" name="park" id="park" checked>
@@ -68,7 +68,7 @@
             <label class="sights__label" for="rocks">Красные скалы</label>
           </fieldset>
           <fieldset class="review-form__item emotions">
-            <legend class="review-form__item__title">Опишите свои эмоции:</legend>
+            <legend class="review-form__title">Опишите свои эмоции:</legend>
             <input class="emotions__input" type="text" name="review" value="Опишите подробно все свои восторги">
           </fieldset>
           <a href="#" class="review-form__send btn">Отправить отзыв</a>
@@ -94,13 +94,13 @@
     <div class="pop-up__failure pop-up__failure--hidden">
       <b class="pop-up__title">Что-то пошло не так!</b>
       <p class="pop-up__text">Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить</p>
-      <button class="pop-up__failure__btn  btn" type="button">Ок</button>
+      <button class="failure__btn  btn" type="button">Ок</button>
     </div>
     <div class="pop-up__success pop-up__success--hidden">
       <b class="pop-up__title">Ваш отзыв отправлен!</b>
       <p class="pop-up__text">Спасибо за ваше участие, ваш отзыв уже поступил к нам. В ближайшее время мы опубликуем его на сайте.</p>
       <div class="btn-wrapper">
-      <button class="pop-up__success__btn  btn" type="button">Закрыть окно</button>
+      <button class="success__btn  btn" type="button">Закрыть окно</button>
       </div>
     </div>
   </body>
