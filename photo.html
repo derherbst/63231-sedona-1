@@ -8,79 +8,81 @@
     <div class="body-wrapper">
       <header class="page-header">
         <h1 class="visually-hidden">Добро пожаловать в Седону!</h1>
-        <nav class="main-nav main-nav--hide">
-          <div class="main-nav__wrapper">
-            <ul class="main-nav__list main-nav__list--left">
-              <li class="main-nav__item"><a href="/index.html">Главная</a></li>
-              <li class="main-nav__item  main-nav__item--active"><a>Фото и Видео</a></li>
-            </ul>
-            <ul class="main-nav__list main-nav__list--right">
-              <li class="main-nav__item"><a href="/form.html">Форма отзыва</a></li>
-              <li class="main-nav__item"><a href="#">HTML Academy</a></li>
-            </ul>
-            <a href="#" class="main-nav__close-menu main-nav--hide"></a>
-            <button class="main-nav__toggle-menu main-nav--hide" type="button"></button>
-          </div>
+        <nav class="main-nav main-nav__hide">
+          <ul class="main-nav__list">
+            <li class="main-nav__item"><a href="/index.html">Главная</a></li>
+            <li class="main-nav__item  main-nav__item--active"><a>Фото и Видео</a></li>
+            <li class="main-nav__item"><a href="/form.html">Форма отзыва</a></li>
+            <li class="main-nav__item"><a href="#">HTML Academy</a></li>
+          </ul>
+          <button class="main-nav__toggle-menu main-nav__hide" type="button"></button>
         </nav>
         <a class="page-header__logo" href="/index.html"><img src="#" width="138" height="70" alt="Логотип Седоны"></a>
       </header>
       <main class="main-wrapper">
         <div class="intro-image">
-          <img src="#" alt="Седона" class="intro-image__sedona">
+          <img class="intro-image__sedona" src="#" alt="Седона">
         </div>
-        <article class="container-intro">
+        <div class="container-intro">
           <h1 class="container-intro__title">Фото и видео</h1>
           <p class="container-intro__text">Не можете решиться на путешествие из-за курса? Фотографии помогут вам забыть о политике и экономике.</p>
-        </article>
-        <section class="photo-gallery">
+        </div>
+        <section class="gallery">
           <div class="gallery__item">
-            <figure class="gallery__item--image"><a href="#"><img src="#" alt="Фото шоссе"></a></figure>
+            <a class="gallery__item--image" href="#"><img src="#" alt="Фото шоссе"></a>
             <h3 class="gallery__item--caption">Неродные просторы</h3>
             <p class="gallery__item--author">Автор фото: Борис</p>
-            <span class="gallery__item--likes">1350</span>
+            <a class="gallery__item--likes">1350</a>
           </div>
           <div class="gallery__item">
-            <figure class="gallery__item--image"><a href="#"><img src="#" alt="Растительность"></a></figure>
+            <a class="gallery__item--image" href="#"><img src="#" alt="Растительность"></a>
             <h3 class="gallery__item--caption">Местная растительность</h3>
             <p class="gallery__item--author">Автор фото: Сергей</p>
-            <span class="gallery__item--likes">143</span>
+            <a class="gallery__item--likes">143</a>
           </div>
           <div class="gallery-item">
-            <figure class="gallery__item--image"><a href="#"><img src="#" alt="Дорога"></a></figure>
+            <a class="gallery__item--image" href="#"><img src="#" alt="Дорога"></a>
             <h3 class="gallery-item__caption">Дорога на север</h3>
             <p class="gallery__item--author">Автор фото: Петр</p>
-            <span class="gallery__item--likes">96</span>
+            <a class="gallery__item--likes">96</a>
           </div>
           <div class="gallery-item">
-            <figure class="gallery__item--image"><a href="#"><img src="#" alt="Мост Дьявола"></a></figure>
+            <a class="gallery__item--image" href="#"><img src="#" alt="Мост Дьявола"></a>
             <h3 class="gallery__item--caption">Мост Дьявола</h3>
             <p class="gallery__item--author">Автор фото: Антон</p>
-            <span class="gallery__item--likes">254</span>
+            <a class="gallery__item--likes">254</a>
           </div>
         </section>
         <section class="video">
-          <article class="video-intro">
+          <div class="video-intro">
             <b class="video-intro__title"></b>
             <p class="video-intro__text"></p>
-          </article>
-          <video width="" height="" controls preload="metadata" src="" poster=""></video>
+          </div>
+          <img src="" width="" height="" alt="Фото-превью"></img>
+          <div class="video-controls">
+            <div class="video-controls--scale"></div>
+            <div class="video-controls--toggle"></div>
+          </div>
+          <div class="video-buttons">
+            <span class="video-buttons--replay"></span>
+            <span class="video-buttons--comment"></span>
+            <span class="video-buttons--width"></span>
+          </div>
         </section>
       </main>
       <footer class="page-footer">
-        <div class="page-footer__wrapper">
-          <section class="page-footer__hashtag">
-            #visitsedona
-          </section>
-          <section class="page-footer__social">
-            <a class="social-btn  social-btn--vk" href="#">Твиттер</a>
-            <a class="social-btn  social-btn--fb" href="#">Фейсбук</a>
-            <a class="social-btn  social-btn--youtube" href="#">YouTube</a>
-          </section>
-          <section class="page-footer__copyright">
-            Website by
-            <a href="https://htmlacademy.ru" class="btn page-footer__copyright-link"></a>
-          </section>
-        </div>
+        <section class="page-footer__hashtag">
+          #visitsedona
+        </section>
+        <section class="page-footer__social">
+          <a class="social-btn  social-btn--vk" href="#">Твиттер</a>
+          <a class="social-btn  social-btn--fb" href="#">Фейсбук</a>
+          <a class="social-btn  social-btn--youtube" href="#">YouTube</a>
+        </section>
+        <section class="page-footer__copyright">
+          Website by
+          <a class="btn page-footer__copyright-link" href="https://htmlacademy.ru"></a>
+        </section>
       </footer>
     </div>
   </body>
