@@ -20,7 +20,7 @@
       </header>
       <main class="main-wrapper">
         <div class="intro-image">
-          <img class="intro-image__sedona-word" src="#" alt="Седона">
+          <img class="intro-image__sedona-word-image" src="#" alt="Седона">
         </div>
         <div class="container-intro">
           <h1 class="container-intro__title">Оставьте свой отзыв</h1>
@@ -29,41 +29,39 @@
         <form class="review-form" action="#" method="post">
           <fieldset class="review-form__group-fields">
             <legend class="review-form__title">Представьтесь, пожалуйста:</legend>
-            <label class="introducing__label">Имя: <input class="introducing__input" type="text" name="name" value="Петр"></label>
-            <label class="introducing__label">Фамилия: <input class="introducing__input" type="text" name="surname" value="Иванов"></label>
-            <label class="introducing__label">Отчетство: <input class="introducing__input" type="text" name="second-name" value="Александрович"></label>
+            <label class="review-form__label">Имя: <input class="review-form__input review-form__input--text" type="text" name="name" value="Петр"></label>
+            <label class="review-form__label">Фамилия: <input class="review-form__input review-form__input--text" type="text" name="surname" value="Иванов"></label>
+            <label class="review-form__label">Отчетство: <input class="review-form__input review-form__input--text" type="text" name="second-name" value="Александрович"></label>
           </fieldset>
           <fieldset class="review-form__group-fields">
             <legend class="review-form__title">Контактная информация:</legend>
-            <label class="contacts__label">Контактный телефон:<input class="contacts__input contacts__input--tel" type="tel" value="Введите телефон" name="phone-number"></label>
-            <span class="contacts--phone-icon"></span>
+            <label class="review-form__label">Контактный телефон:<input class="review-form__input review-form__input--tel" type="tel" value="Введите телефон" name="phone-number"></label>
             <small class="error">Ошибка, перепроверьте номер</small>
-            <label class="contacts__label"><input class="contacts__input contacts__input--e-mail" type="email" value="Введите e-mail" name="e-mail"></label>
-            <span class="contacts--email-icon"></span>
+            <label class="review-form__label"><input class="review-form__input review-form__input--e-mail" type="email" value="Введите e-mail" name="e-mail"></label>
           </fieldset>
           <fieldset class="review-form__group-fields">
             <legend class="review-form__title">Ваше общее впечатление:</legend>
-            <input class="impression__input" type="radio" value="positive" name="positive" id="positive" checked>
+            <input class="review-form__input review-form__input--radio" type="radio" value="positive" name="positive" id="positive" checked>
             <label class="impression__label" for="positive">Скорее положительное</label>
-            <input class="impression__input" type="radio" value="negative" name="negative" id="positive">
-            <label class="impression__label" for="negative">Скорее отрицательное</label>
-            <input class="impression__input" type="radio" value="middle" name="middle" id="middle">
+            <input class="review-form__input review-form__input--radio" type="radio" value="negative" name="negative" id="positive">
+            <label class="review-form__label" for="negative">Скорее отрицательное</label>
+            <input class="review-form__input review-form__input--radio" type="radio" value="middle" name="middle" id="middle">
             <label class="impression__label" for="middle">Затрудняюсь ответить</label>
           </fieldset>
           <fieldset class="review-form__group-fields">
             <legend class="review-form__title">Посещенные достопримечательности:</legend>
-            <input class="sights__input" type="checkbox" name="bridge" id="bridge" checked>
-            <label class="sights__label" for="bridge">Мост Дьявола</label>
-            <input class="sights__input" type="checkbox" name="park" id="park" checked>
-            <label class="sights__label" for="park">Слайд-парк</label>
-            <input class="sights__input" type="checkbox" name="bell" id="bell">
-            <label class="sights__label" for="bell">Гора-Колокол</label>
-            <input class="sights__input" type="checkbox" name="red-rocks" id="rocks" checked>
-            <label class="sights__label" for="rocks">Красные скалы</label>
+            <input class="review-form__input review-form__input--checkbox" type="checkbox" name="bridge" id="bridge" checked>
+            <label class="review-form__label" for="bridge">Мост Дьявола</label>
+            <input class="review-form__input review-form__input--checkbox" type="checkbox" name="park" id="park" checked>
+            <label class="review-form__label" for="park">Слайд-парк</label>
+            <input class="review-form__input review-form__input--checkbox" type="checkbox" name="bell" id="bell">
+            <label class="review-form__label" for="bell">Гора-Колокол</label>
+            <input class="review-form__input review-form__input--checkbox" type="checkbox" name="red-rocks" id="rocks" checked>
+            <label class="review-form__label" for="rocks">Красные скалы</label>
           </fieldset>
           <fieldset class="review-form__group-fields">
             <legend class="review-form__title">Опишите свои эмоции:</legend>
-            <input class="emotions__input" type="text" name="review" value="Опишите подробно все свои восторги">
+            <textarea rows="7" cols="25" name="text">Опишите подробно все свои восторги</textarea>
           </fieldset>
           <button class="review-form__send btn" type="submit">Отправить отзыв</button>
         </form>
@@ -79,20 +77,20 @@
         </section>
         <section class="page-footer__copyright">
           Website by
-          <a class="btn page-footer__copyright-link" href="https://htmlacademy.ru"></a>
+          <a class="btn page-footer__link" href="https://htmlacademy.ru"></a>
         </section>
       </footer>
     </div>
-    <div class="pop-up__failure pop-up__failure--hidden">
-      <b class="pop-up__title">Что-то пошло не так!</b>
-      <p class="pop-up__text">Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить</p>
-      <button class="failure__btn  btn" type="button">Ок</button>
+    <div class="pop-up-failure pop-up-failure__hidden">
+      <b class="pop-up-failure__title">Что-то пошло не так!</b>
+      <p class="pop-up-failure__text">Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить</p>
+      <button class="pop-up-failure__btn  btn" type="button">Ок</button>
     </div>
-    <div class="pop-up__success pop-up__success--hidden">
-      <b class="pop-up__title">Ваш отзыв отправлен!</b>
-      <p class="pop-up__text">Спасибо за ваше участие, ваш отзыв уже поступил к нам. В ближайшее время мы опубликуем его на сайте.</p>
+    <div class="pop-up-success pop-up-success__hidden">
+      <b class="pop-up-success__title">Ваш отзыв отправлен!</b>
+      <p class="pop-up-success__text">Спасибо за ваше участие, ваш отзыв уже поступил к нам. В ближайшее время мы опубликуем его на сайте.</p>
       <div class="btn-wrapper">
-      <button class="success__btn  btn" type="button">Закрыть окно</button>
+      <button class="pop-up-success__btn  btn" type="button">Закрыть окно</button>
       </div>
     </div>
   </body>
