@@ -1,0 +1,15 @@
+.page-header {
+	min-height: 55px;
+	max-height: 223px;
+	width: 100%;
+	margin-bottom: 45px;
+}
+
+.page-header__logo {
+	position: absolute;
+	height: 83px;
+	top: 220px;
+	left: 160px;
+	transform: translateX(-50%);
+    z-index: 1;
+}

@@ -1,0 +1,16 @@
+.feature-item {
+    padding-bottom: 34px;
+    
+    &--food {
+        padding-bottom: 0px;
+    }
+}
+
+.feature-item__name {
+    display: block;
+    padding-bottom: 20px;
+}
+
+.feature-item__text {
+    margin: 0px;
+}

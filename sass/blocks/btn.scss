@@ -1,0 +1,8 @@
+.btn {
+    @include font(21px,26px);
+    
+    @include button();
+    
+    outline: none;
+    border: none;
+}

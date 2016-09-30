@@ -1,0 +1,43 @@
+@mixin clearfix() {
+    &::after {
+        content: "";
+        
+        display: table;
+        clear: both;
+    }
+}
+
+@mixin center() {
+    margin: 0 auto;
+    min-width: 320px;
+    
+//    @media #{$tablet-widths} {
+//        width: 648px;
+//    }
+//    
+//    @media (#{$desktop-width}) {
+//        width: 1060px;
+//    }
+}
+
+
+@mixin font($body-font-size: 14px, $body-line-height: 21px) {
+    font-size: $body-font-size;
+    line-height: $body-line-height;
+}
+
+//@mixin padding($padding: 0 20px) {
+//    padding: $padding;
+//}
+
+@mixin button() {
+    text-decoration: none;
+    color: $white-text;
+    background-color: $bg-blue;
+    padding: 17px 45px;
+}
+
+@mixin horizontal-padding($left-padding: 20px, $right-padding: 20px) {
+    padding-left: $left-padding;
+    padding-right: $right-padding;
+}

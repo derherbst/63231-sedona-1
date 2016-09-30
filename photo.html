@@ -3,24 +3,25 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Седона</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
   </head>
   <body>
     <div class="body-wrapper">
       <header class="page-header">
         <nav class="main-nav main-nav--closed">
           <ul class="main-nav__list">
-            <li class="main-nav__item"><a href="/index.html">Главная</a></li>
+            <li class="main-nav__item"><a href="index.html">Главная</a></li>
             <li class="main-nav__item  main-nav__item--active"><a>Фото и Видео</a></li>
-            <li class="main-nav__item"><a href="/form.html">Форма отзыва</a></li>
+            <li class="main-nav__item"><a href="form.html">Форма отзыва</a></li>
             <li class="main-nav__item"><a href="#">HTML Academy</a></li>
           </ul>
           <button class="main-nav__toggle-menu" type="button"></button>
         </nav>
-        <a class="page-header__logo" href="/index.html"><img src="#" width="138" height="70" alt="Логотип Седоны"></a>
+        <a class="page-header__logo" href="index.html"><img src="img/logo-sedona-mobile.svg" width="138" height="70" alt="Логотип Седоны"></a>
       </header>
       <main class="main-wrapper">
         <div class="intro-image">
-          <img class="intro-image__sedona-word-image" src="#" alt="Седона">
+          <img class="intro-image__sedona-word-image" src="img/text-sedona.svg" alt="Седона">
         </div>
         <div class="container-intro">
           <h1 class="container-intro__title">Фото и видео</h1>
@@ -28,28 +29,28 @@
         </div>
         <section class="gallery">
           <div class="gallery-item">
-            <a class="gallery-item__image" href="#"><img src="#" alt="Фото шоссе"></a>
+            <a class="gallery-item__image" href="#"><img src="img/photo-1-mobile@1x.jpg" alt="Фото шоссе"></a>
             <h3 class="gallery-item__caption">Неродные просторы</h3>
             <p class="gallery-item__author">Автор фото: Борис</p>
             <a class="gallery-item__likes">1350</a>
           </div>
           <div class="gallery-item">
-            <a class="gallery-item__image" href="#"><img src="#" alt="Растительность"></a>
+            <a class="gallery-item__image" href="#"><img src="img/photo-2-mobile@1x.jpg" alt="Растительность"></a>
             <h3 class="gallery-item__caption">Местная растительность</h3>
             <p class="gallery-item__author">Автор фото: Сергей</p>
             <a class="gallery-item__likes">143</a>
           </div>
           <div class="gallery-item">
-            <a class="gallery-item__image" href="#"><img src="#" alt="Дорога"></a>
+            <a class="gallery-item__image" href="#"><img src="img/photo-3-mobile@1x.jpg" alt="Дорога"></a>
             <h3 class="gallery-item__caption">Дорога на север</h3>
             <p class="gallery-item__author">Автор фото: Петр</p>
             <a class="gallery-item__likes">96</a>
           </div>
           <div class="gallery-item">
-            <a class="gallery__item__image" href="#"><img src="#" alt="Мост Дьявола"></a>
-            <h3 class="gallery__item__caption">Мост Дьявола</h3>
-            <p class="gallery__item__author">Автор фото: Антон</p>
-            <a class="gallery__item__likes">254</a>
+            <a class="gallery-item__image" href="#"><img src="img/photo-4-mobile@1x.jpg" alt="Мост Дьявола"></a>
+            <h3 class="gallery-item__caption">Мост Дьявола</h3>
+            <p class="gallery-item__author">Автор фото: Антон</p>
+            <a class="gallery-item__likes">254</a>
           </div>
         </section>
         <section class="video">
@@ -57,16 +58,19 @@
             <b class="video-intro__title">Все еще сомневаетесь?</b>
             <p class="video-intro__text">Смотрите видеопрезентацию и скорее за билетами, пока они не подорожали в очередной раз!</p>
           </div>
-          <img src="#" width="" height="" alt="Фото-превью"></img>
-          <div class="video-controls">
-            <div class="video-controls__scale"></div>
-            <div class="video-controls__toggle"></div>
+          <div class="video__preview">
+<!--            <img src="" width="320" height="201" alt="Фото-превью"></img>-->
+            <div class="video-controls">
+              <div class="video-controls__scale">
+                <div class="video-controls__toggle"></div>
+              </div>
+            </div>
           </div>
           <div class="video-buttons">
-            <input class="video-button video-button--replay" type="button" name="replay"></input>
-            <input class="video-button video-button--comment" type="button" name="comment"></input>
-            <input class="video-button video-button--width" type="button" name="width"></input>
-          </div>
+              <input class="video-button video-button--replay" type="button" name="replay"></input>
+              <input class="video-button video-button--comment" type="button" name="comment"></input>
+              <input class="video-button video-button--width" type="button" name="width"></input>
+            </div>
         </section>
       </main>
       <footer class="page-footer">
@@ -80,7 +84,7 @@
         </section>
         <section class="page-footer__copyright">
           Website by
-          <a class="btn page-footer__copyright-link" href="https://htmlacademy.ru"></a>
+          <a class="page-footer__copyright-link" href="https://htmlacademy.ru"></a>
         </section>
       </footer>
     </div>

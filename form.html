@@ -3,24 +3,25 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Седона</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
   </head>
   <body>
     <div class="body-wrapper">
       <header class="page-header">
         <nav class="main-nav main-nav--closed">
           <ul class="main-nav__list">
-            <li class="main-nav__item"><a href="/index.html">Главная</a></li>
-            <li class="main-nav__item"><a href="/photo.html">Фото и Видео</a></li>
+            <li class="main-nav__item"><a href="index.html">Главная</a></li>
+            <li class="main-nav__item"><a href="photo.html">Фото и Видео</a></li>
             <li class="main-nav__item  main-nav__item--active"><a>Форма отзыва</a></li>
             <li class="main-nav__item"><a href="#">HTML Academy</a></li>
           </ul>
           <button class="main-nav__toggle-menu" type="button"></button>
         </nav>
-        <a class="page-header__logo" href="/index.html"><img src="#" width="138" height="70" alt="Логотип Седоны"></a>
+        <a class="page-header__logo" href="index.html"><img src="img/logo-sedona-mobile.svg" width="138" height="70" alt="Логотип Седоны"></a>
       </header>
       <main class="main-wrapper">
         <div class="intro-image">
-          <img class="intro-image__sedona-word-image" src="#" alt="Седона">
+          <img class="intro-image__sedona-word-image" src="img/text-sedona.svg" alt="Седона">
         </div>
         <div class="container-intro">
           <h1 class="container-intro__title">Оставьте свой отзыв</h1>
@@ -29,15 +30,15 @@
         <form class="review-form" action="#" method="post">
           <fieldset class="review-form__group-fields">
             <legend class="review-form__title">Представьтесь, пожалуйста:</legend>
-            <label class="review-form__label">Имя: <input class="review-form__input review-form__input--text" type="text" name="name" value="Петр"></label>
-            <label class="review-form__label">Фамилия: <input class="review-form__input review-form__input--text" type="text" name="surname" value="Иванов"></label>
-            <label class="review-form__label">Отчетство: <input class="review-form__input review-form__input--text" type="text" name="second-name" value="Александрович"></label>
+            <label class="review-form__label">Имя:<input class="review-form__input review-form__input--text" type="text" name="name" value="Петр"></label>
+            <label class="review-form__label">Фамилия:<input class="review-form__input review-form__input--text" type="text" name="surname" value="Иванов"></label>
+            <label class="review-form__label">Отчетство:<input class="review-form__input review-form__input--text" type="text" name="second-name" value="Александрович"></label>
           </fieldset>
           <fieldset class="review-form__group-fields">
             <legend class="review-form__title">Контактная информация:</legend>
             <label class="review-form__label">Контактный телефон:<input class="review-form__input review-form__input--tel" type="tel" value="Введите телефон" name="phone-number"></label>
             <small class="error">Ошибка, перепроверьте номер</small>
-            <label class="review-form__label"><input class="review-form__input review-form__input--e-mail" type="email" value="Введите e-mail" name="e-mail"></label>
+            <label class="review-form__label">Электронная почта:     <input class="review-form__input review-form__input--e-mail" type="email" value="Введите e-mail" name="e-mail"></label>
           </fieldset>
           <fieldset class="review-form__group-fields">
             <legend class="review-form__title">Ваше общее впечатление:</legend>
@@ -77,7 +78,7 @@
         </section>
         <section class="page-footer__copyright">
           Website by
-          <a class="btn page-footer__link" href="https://htmlacademy.ru"></a>
+          <a class="page-footer__link" href="https://htmlacademy.ru"></a>
         </section>
       </footer>
     </div>

@@ -1,0 +1,36 @@
+.review-form {
+    margin-top: 22px;
+    padding: 0 20px;
+}
+
+
+.review-form__group-fields {
+    padding-bottom: 26px;
+    border-bottom: $grey-border;
+}
+
+.review-form__title {
+//    border-top: $grey-border;
+    padding-top: 20px;
+    display: block;
+    width: 100%;
+    font-weight: bold;
+    
+    @include font(18px, 26px);
+}
+
+
+.review-form__label {
+    display: block;
+    text-align: justify;
+    width: auto;
+}
+
+.review-form__input {
+    background-color: $bg-lightgrey;
+    width: auto;
+}
+
+.review-form__textarea {
+    background-color: $bg-lightgrey;
+}

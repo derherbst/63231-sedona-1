@@ -1,0 +1,36 @@
+.main-nav {
+	display: block;
+	width: 100%;
+    position: relative;
+}
+
+.main-nav--hide {
+	display: none;
+}
+
+.main-nav__list {
+	margin: 0px;
+	padding: 0px;
+}
+
+.main-nav__item {
+	background-color: $bg-blue;
+	list-style: none;
+	text-align: center;
+	color: #ffffff;
+    padding-top: 7px;
+    padding-bottom: 7px;
+	border-bottom: 1px solid $nav-border-color;
+    @include font(18px, 40px);
+}
+
+.main-nav__item a {
+	text-decoration: none;
+	color: #ffffff;
+}
+
+.main-nav__toggle-menu {
+	position: absolute;
+    top: 17px;
+    right: 20px;
+}
