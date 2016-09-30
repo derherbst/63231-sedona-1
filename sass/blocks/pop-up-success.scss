@@ -1,0 +1,28 @@
+.pop-up-success {
+    width: $mobile-width;
+    text-align: $align-center;
+    padding: 43px 0px 0px;
+    box-sizing: border-box;
+    background-color: $bg-white;
+    box-shadow: 0px 1px 20px 1px rgba(50, 50, 50, 0.38);
+    position: absolute;
+    top: 1543px;
+}
+
+.pop-up-success__title {
+    @include font(18px, 26px);
+    @include padding();
+}
+
+.pop-up-success__text {
+    @include font(14px, 24px);
+    @include horizontal-padding();
+}
+
+.pop-up-success__btn {
+    width: 100%;
+    padding-top: 16px;
+    padding-bottom: 16px;
+    margin-top: 20px;
+    box-sizing: border-box;
+}

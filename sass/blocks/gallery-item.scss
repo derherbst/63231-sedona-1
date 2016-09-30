@@ -1,0 +1,29 @@
+.gallery-item {
+    border-top: $grey-border;
+    padding-top: 22px;
+    margin-bottom: 17px;
+}
+
+.gallery-item__caption {
+    text-align: left;
+    margin-top: 13px;
+    @include padding(0 20px);
+    margin-bottom: 5px;
+}
+
+.gallery-item__author {
+    text-align: left;
+    margin: 0;
+    @include padding(0 20px);
+    text-transform: none;
+    color: #333;
+}
+
+.gallery-item__likes {
+    display: block;
+    text-align: left;
+    margin-left: 20px;
+    padding-left: 35px;
+    font-weight: bold;
+    margin-top: 4px;
+}

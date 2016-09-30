@@ -1,0 +1,15 @@
+.page-footer {
+    @include padding();
+}
+
+.page-footer__hashtag {
+    @include font(21px, 26px);
+    margin: 37px 0px;
+    font-weight: bold;
+}
+
+
+.page-footer__copyright {
+    @include font(14px, 26px);
+    padding-bottom: 33px;
+}

@@ -1,0 +1,28 @@
+.video-controls {
+    position: absolute;
+    top: 156px;
+    background-color: rgba(0,0,0,0.6);
+    height: 45px;
+    left: 20px;
+    right: 20px;
+    padding-top: 22px;
+    box-sizing: border-box;
+    @include horizontal-padding(22px, 22px);
+}
+
+.video-controls__scale {
+    background-color: rgba(143,139,147,0.5);
+    height: 3px;
+    position: relative;
+    
+}
+
+.video-controls__toggle {
+    position: absolute;
+    width: 9px;
+    height: 9px;
+    background-color: white;
+    border-radius: 50%;
+    top: -3px;
+    left: 36px;
+}

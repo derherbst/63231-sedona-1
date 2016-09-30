@@ -1,0 +1,18 @@
+.video-intro {
+    box-sizing: border-box;
+    background-color: white;
+}
+
+.video-intro__title {
+    @include font(18px, 26px);
+    margin-bottom: 33px;
+    
+    @include padding(0 20px);
+}
+
+.video-intro__text {
+    margin: 0;
+    
+    @include padding(0 20px);
+    @include font(14px, 24px);
+}

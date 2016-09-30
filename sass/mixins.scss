@@ -1,0 +1,38 @@
+$nav-border-color: #678fa8;
+$titles-font-size: 18px;
+$titles-line-height: 26px;
+$body-font-size: 14px;
+$body-line-height: 21px;
+$padding: 0 20px;
+$left-padding: 20px;
+$right-padding: 20px;
+
+@mixin center() {
+    margin: 0 auto;
+    width: 100%;
+}
+
+@mixin navigation-border($nav-border-color) {
+	border-bottom: 1px solid $nav-border-color;
+}
+
+@mixin font($body-font-size: 14px, $body-line-height: 21px) {
+    font-size: $body-font-size;
+    line-height: $body-line-height;
+}
+
+@mixin padding($padding: 0 20px) {
+    padding: $padding;
+}
+
+@mixin button() {
+    text-decoration: none;
+    color: $white-text;
+    background-color: $bg-blue;
+    padding: 17px 45px;
+}
+
+@mixin horizontal-padding($left-padding: 20px, $right-padding: 20px) {
+    padding-left: $left-padding;
+    padding-right: $right-padding;
+}
