@@ -1,5 +1,4 @@
-$align-center: center;
-$block-width: 100%;
+
 
 .container-intro {
 	
@@ -13,7 +12,7 @@ $block-width: 100%;
 	margin-top: 0px;
 	margin-bottom: 35px;
 	padding: 0 4%;
-text-align: $align-center;
+    text-align: $align-center;
 	@include font(18px, 26px);
 }
 
@@ -22,6 +21,6 @@ text-align: $align-center;
     margin-bottom: 0px;
 
 	@include font(14px, 24px);
-    @include padding(0 15px);
+    padding: 0 15px;
 
 }

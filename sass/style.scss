@@ -1,10 +1,10 @@
+@import "variables.scss";
+
 @import "global/normalize.scss";
 @import "global/fonts.scss";
 @import "global/layout.scss";
 
 @import "mixins.scss";
-@import "variables.scss";
-
 
 @import "blocks/body-wrapper";
 @import "blocks/page-header";

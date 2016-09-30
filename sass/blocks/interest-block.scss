@@ -15,7 +15,7 @@
     margin-bottom: 40px;
     
     @include font(14px, 24px);
-    @include padding();
+    padding: 0 20px;
 }
 
 .interest-block__hotel-search {

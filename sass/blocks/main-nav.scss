@@ -1,5 +1,3 @@
-$bg-blue: #81b3d2;
-
 .main-nav {
 	display: block;
 	width: 100%;
@@ -22,8 +20,7 @@ $bg-blue: #81b3d2;
 	color: #ffffff;
     padding-top: 7px;
     padding-bottom: 7px;
-
-	@include navigation-border($nav-border-color);
+	border-bottom: 1px solid $nav-border-color;
     @include font(18px, 40px);
 }
 

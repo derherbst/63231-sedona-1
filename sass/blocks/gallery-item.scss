@@ -7,14 +7,14 @@
 .gallery-item__caption {
     text-align: left;
     margin-top: 13px;
-    @include padding(0 20px);
+    padding: 0 20px;
     margin-bottom: 5px;
 }
 
 .gallery-item__author {
     text-align: left;
     margin: 0;
-    @include padding(0 20px);
+    padding: 0 20px;
     text-transform: none;
     color: #333;
 }

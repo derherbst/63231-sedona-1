@@ -18,5 +18,6 @@
 }
 
 .pop-up-failure__btn {
-    @include horizontal-padding(90px, 90px);
+    padding-left: 90px;
+    padding-right: 90px;
 }
