@@ -21,36 +21,52 @@
       </header>
       <main class="main-wrapper">
         <div class="intro-image">
-          <img class="intro-image__sedona-word-image" src="img/text-sedona.svg" alt="Седона">
+          <img class="intro-image__sedona-word-image" src="img/text-sedona.svg" alt="Седона" height="290">
         </div>
         <div class="container-intro">
-          <h1 class="container-intro__title">Фото и видео</h1>
-          <p class="container-intro__text">Не можете решиться на путешествие из-за курса? Фотографии помогут вам забыть о политике и экономике.</p>
+          <h1 class="container-intro__title container-intro__title--photo">Фото и видео</h1>
+          <p class="container-intro__text container-intro__text--photo">Не можете решиться на путешествие из-за курса? Фотографии помогут вам забыть о политике и экономике.</p>
         </div>
         <section class="gallery">
           <div class="gallery-item">
             <a class="gallery-item__image" href="#"><img src="img/photo-1-mobile@1x.jpg" alt="Фото шоссе"></a>
-            <h3 class="gallery-item__caption">Неродные просторы</h3>
-            <p class="gallery-item__author">Автор фото: Борис</p>
-            <a class="gallery-item__likes">1350</a>
+            <div class="gallery-item__caption-blocks">
+              <div class="gallery-item__caption-block gallery-item__caption-block--left">
+                <h3 class="gallery-item__caption">Неродные просторы</h3>
+                <p class="gallery-item__author">Автор фото: Борис</p>
+              </div>
+              <a class="gallery-item__likes">1350</a>
+            </div>
           </div>
           <div class="gallery-item">
             <a class="gallery-item__image" href="#"><img src="img/photo-2-mobile@1x.jpg" alt="Растительность"></a>
-            <h3 class="gallery-item__caption">Местная растительность</h3>
-            <p class="gallery-item__author">Автор фото: Сергей</p>
-            <a class="gallery-item__likes">143</a>
+            <div class="gallery-item__caption-blocks">
+              <div class="gallery-item__caption-block gallery-item__caption-block--left">
+                <h3 class="gallery-item__caption">Местная растительность</h3>
+                <p class="gallery-item__author">Автор фото: Сергей</p>
+              </div>
+              <a class="gallery-item__likes">143</a>
+            </div>
           </div>
           <div class="gallery-item">
             <a class="gallery-item__image" href="#"><img src="img/photo-3-mobile@1x.jpg" alt="Дорога"></a>
-            <h3 class="gallery-item__caption">Дорога на север</h3>
-            <p class="gallery-item__author">Автор фото: Петр</p>
-            <a class="gallery-item__likes">96</a>
+            <div class="gallery-item__caption-blocks">
+              <div class="gallery-item__caption-block gallery-item__caption-block--left">
+                <h3 class="gallery-item__caption">Дорога на север</h3>
+                <p class="gallery-item__author">Автор фото: Петр</p>
+              </div>
+              <a class="gallery-item__likes">96</a>
+            </div>
           </div>
           <div class="gallery-item">
             <a class="gallery-item__image" href="#"><img src="img/photo-4-mobile@1x.jpg" alt="Мост Дьявола"></a>
-            <h3 class="gallery-item__caption">Мост Дьявола</h3>
-            <p class="gallery-item__author">Автор фото: Антон</p>
-            <a class="gallery-item__likes">254</a>
+            <div class="gallery-item__caption-blocks">
+              <div class="gallery-item__caption-block gallery-item__caption-block--left">
+                <h3 class="gallery-item__caption">Мост Дьявола</h3>
+                <p class="gallery-item__author">Автор фото: Антон</p>
+              </div>
+              <a class="gallery-item__likes">254</a>
+            </div>
           </div>
         </section>
         <section class="video">
@@ -58,6 +74,7 @@
             <b class="video-intro__title">Все еще сомневаетесь?</b>
             <p class="video-intro__text">Смотрите видеопрезентацию и скорее за билетами, пока они не подорожали в очередной раз!</p>
           </div>
+          <div class="video__player">
           <div class="video__preview">
 <!--            <img src="" width="320" height="201" alt="Фото-превью"></img>-->
             <div class="video-controls">
@@ -67,10 +84,13 @@
             </div>
           </div>
           <div class="video-buttons">
-              <input class="video-button video-button--replay" type="button" name="replay"></input>
+            <input class="video-button video-button--replay" type="button" name="replay"></input>
+            <span class="video-button__wrapper">
               <input class="video-button video-button--comment" type="button" name="comment"></input>
               <input class="video-button video-button--width" type="button" name="width"></input>
-            </div>
+            </span>
+          </div>
+          </div>
         </section>
       </main>
       <footer class="page-footer">

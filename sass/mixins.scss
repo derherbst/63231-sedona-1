@@ -11,13 +11,13 @@
     margin: 0 auto;
     min-width: 320px;
     
-//    @media #{$tablet-widths} {
-//        width: 648px;
-//    }
-//    
-//    @media (#{$desktop-width}) {
-//        width: 1060px;
-//    }
+    @media #{$tablet-widths} {
+        width: 648px;
+    }
+    
+    @media #{$desktop-width} {
+        width: 1060px;
+    }
 }
 
 
@@ -26,15 +26,13 @@
     line-height: $body-line-height;
 }
 
-//@mixin padding($padding: 0 20px) {
-//    padding: $padding;
-//}
 
-@mixin button() {
-    text-decoration: none;
+@mixin button($padding: 17px 0px, $white-text: #fff, $bg-blue: #81b3d2, $no-decoration: none) {
+    padding: $padding;
     color: $white-text;
     background-color: $bg-blue;
-    padding: 17px 45px;
+    text-decoration: $no-decoration;
+    
 }
 
 @mixin horizontal-padding($left-padding: 20px, $right-padding: 20px) {

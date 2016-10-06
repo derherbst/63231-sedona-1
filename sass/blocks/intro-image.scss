@@ -17,3 +17,37 @@
     width: 100%;
     box-sizing: border-box;
 }
+
+
+@media ($tablet-widths) {
+    .intro-image {   
+        text-align: center;
+        margin-bottom: 51px;
+    }
+    
+    .intro-image__sedona-welcome {
+        padding-top: 77px;
+        padding-bottom: 91px;
+    }
+    
+    .intro-image__sedona-word-image {
+//        padding: 95px 153px 117px;
+        background: #475958 url(../img/bg-back-mobile@1x.jpg) no-repeat 0% 100%;
+        padding: 95px 156px 117px;
+        width: 100%;
+        box-sizing: border-box;
+    }
+
+}
+
+@media ($desktop-width) {
+    .intro-image__sedona-welcome {
+        background: #475958 url(../img/bg-back-mobile@1x.jpg) no-repeat 50% 0%;
+        width: 100%;
+        box-sizing: border-box;
+    }
+    
+    .intro-image__sedona-word-image {
+        padding: 95px 370px 117px;
+    }
+}

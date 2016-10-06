@@ -7,3 +7,20 @@
     padding-right: 30px;
     box-sizing: border-box;
 }
+
+@media ($tablet-widths) {
+    .features {
+        text-align: center;
+        @include clearfix();
+        padding-left: 0;
+        padding-right: 0;
+        margin: 0;
+    }
+    
+}
+
+@media ($desktop-width) {
+    .features {
+        margin-bottom: 68px;
+    }
+}

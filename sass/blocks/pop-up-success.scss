@@ -5,8 +5,11 @@
     box-sizing: border-box;
     background-color: $bg-white;
     box-shadow: 0px 1px 20px 1px rgba(50, 50, 50, 0.38);
-    position: absolute;
-    top: 1543px;
+    position: relative;
+    bottom: 1143px;
+    font-family: 'PT Sans';
+    
+    @include center();
 }
 
 .pop-up-success__title {
@@ -26,4 +29,28 @@
     padding-bottom: 16px;
     margin-top: 20px;
     box-sizing: border-box;
+}
+
+@media ($tablet-widths) {
+    
+    .pop-up-success {
+        width: 640px;
+        padding-top: 60px;
+    }
+    
+    .pop-up-success__title {
+        margin-bottom: 30px;
+    }
+    
+    .pop-up-success__text {
+        margin-top: 0;
+        margin-bottom: 35px;
+        font-family: 'PT Sans';
+        @include font(14px, 24px);
+        padding: 0 110px;
+    }
+    
+    .pop-up-success__btn {
+//        margin-top: 44px;
+    }
 }

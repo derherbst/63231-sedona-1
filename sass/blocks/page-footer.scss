@@ -4,12 +4,50 @@
 
 .page-footer__hashtag {
     @include font(21px, 26px);
-    margin: 37px 0px;
+    margin: 37px 0;
     font-weight: bold;
 }
 
+.page-footer__social {
+    margin-bottom: 40px;
+}
 
 .page-footer__copyright {
+    display: block;
     @include font(14px, 26px);
     padding-bottom: 33px;
+}
+
+@media ($tablet-widths) {
+    .page-footer {
+        padding: 0 60px;
+        
+        @include clearfix();
+        
+        vertical-align: middle;
+    }
+    
+    .page-footer__hashtag {
+        margin: 0;
+        float: left;
+        width: 33.333333%;
+        padding: 37px 0;
+        box-sizing: border-box;
+    }
+    
+    .page-footer__social {
+        float: left;
+        width: 33.333333%;
+        padding: 37px 0;
+        box-sizing: border-box;
+        margin-bottom: 0px;
+    }
+    
+    .page-footer__copyright {
+        float: left;
+        width: 33.333333%;
+        padding: 37px 0;
+        box-sizing: border-box;
+        margin: 0
+    }
 }

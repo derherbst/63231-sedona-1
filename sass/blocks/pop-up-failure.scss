@@ -5,6 +5,10 @@
     box-sizing: border-box;
     background-color: $bg-white;
     box-shadow: 0px 1px 20px 1px rgba(50, 50, 50, 0.38);
+    position: relative;
+    bottom: 700px;
+    margin: 0 auto;
+    font-family: 'PT Sans';
 }
 
 .pop-up-failure__title {
@@ -20,4 +24,11 @@
 .pop-up-failure__btn {
     padding-left: 90px;
     padding-right: 90px;
+}
+
+@media ($tablet-widths) {
+    
+    .pop-up-failure {
+        z-index: 3;
+    }
 }
