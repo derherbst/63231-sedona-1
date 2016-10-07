@@ -6,3 +6,29 @@
     }
 }
 
+@media ($tablet-widths) {
+    
+    .reason-wrapper {
+        width: $block-width;
+        margin-top: 47px;
+        @include clearfix();
+        
+        &--grey {
+            margin: 0;
+            @include clearfix();
+        }
+    }
+    
+}
+
+@media ($desktop-width) {
+    
+    .reason-wrapper {
+        margin-top: 0;
+        width: $block-width;
+    }
+    
+}
+
+
+

@@ -2,6 +2,38 @@
     background-color: #f2f2f2;
     width: 280px;
     margin-left: 20px;
+    margin-right: 20px;
     padding-top: 23px;
     padding-bottom: 23px;
+    @include clearfix();
+}
+
+@media ($tablet-widths) {
+    
+    .video-buttons {
+        margin-left: 60px;
+        margin-right: 60px;
+        width: 648px;
+        position: absolute;
+        background-color: rgba(0,0,0,0);
+        top: 406px;
+        height: 48px;
+        @include clearfix();
+    }
+    
+}
+
+@media ($desktop-width) {
+    
+    .video-buttons {
+        margin-left: 200px;
+        margin-right: 200px;
+        width: 800px;
+        position: absolute;
+        background-color: rgba(0,0,0,0);
+        top: 406px;
+        height: 48px;
+        @include clearfix();
+    }
+    
 }

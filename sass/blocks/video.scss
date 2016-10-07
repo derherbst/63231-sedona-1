@@ -14,3 +14,38 @@
     height: 201px;
     position: relative;
 }
+
+
+@media ($tablet-widths) {
+    
+    .video {
+        border-top: 0;
+        padding: 65px 0 40px;
+    }
+    
+    .video__player {
+        position: relative;
+    }
+    
+    .video__preview {
+        margin-top: 75px;
+        width: auto;
+        margin-left: 60px;
+        margin-right: 60px;
+        height: 500px;
+    }
+    
+}
+
+@media ($desktop-width) {
+    
+    .video {
+        padding: 70px 0 85px;
+    }
+    
+    .video__preview {
+        margin-left: 200px;
+        margin-right: 200px;
+    }
+    
+}

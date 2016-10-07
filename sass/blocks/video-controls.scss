@@ -27,3 +27,34 @@
     top: -3px;
     left: 36px;
 }
+
+@media ($tablet-widths) {
+    
+    .video-controls {
+        left: 0;
+        right: 0;
+        height: 94px;
+        top: 406px;
+        padding-top: 47px;
+        padding-left: 93px;
+        padding-right: 165px;
+    }
+    
+    .video-controls__scale {
+        height: 4px;
+    }
+    
+    .video-controls__toggle {
+        top: -2px;
+        left: 118px;
+    }
+    
+}
+
+
+
+
+
+
+
+

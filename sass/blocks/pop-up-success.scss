@@ -1,12 +1,15 @@
 .pop-up-success {
     width: $mobile-width;
-    text-align: $align-center;
+    text-align: center;
     padding: 43px 0px 0px;
     box-sizing: border-box;
     background-color: $bg-white;
     box-shadow: 0px 1px 20px 1px rgba(50, 50, 50, 0.38);
     position: absolute;
-    top: 1543px;
+    font-family: 'PT Sans', 'Arial', sans-serif;
+    @include center();
+    margin: 0 auto;
+    bottom: 700px;
 }
 
 .pop-up-success__title {
@@ -24,6 +27,35 @@
     width: 100%;
     padding-top: 16px;
     padding-bottom: 16px;
-    margin-top: 20px;
     box-sizing: border-box;
+}
+
+@media ($tablet-widths) {
+    
+    .pop-up-success {
+        width: 640px;
+        padding-top: 60px;
+        left: 65px;
+    }
+    
+    .pop-up-success__title {
+        margin-bottom: 30px;
+    }
+    
+    .pop-up-success__text {
+        margin-top: 0;
+        margin-bottom: 35px;
+        font-family: $font;
+        @include font(14px, 24px);
+        padding: 0 110px;
+    }
+    
+}
+
+@media ($desktop-width) {
+    
+    .pop-up-success {
+        left: 280px;
+    }
+    
 }

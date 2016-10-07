@@ -14,3 +14,12 @@
 .feature-item__text {
     margin: 0px;
 }
+
+@media ($tablet-widths) {
+    .feature-item {
+        float: left;
+        width: (100% / 3);
+        padding: 160px (35/768*100%) 18px (35/768*100%);
+        box-sizing: border-box;
+    }
+}

@@ -1,5 +1,22 @@
 .gallery {
     margin-top: 30px;
-    
     @include font(14px, 26px);
+}
+
+@media ($tablet-widths) {
+    
+    .gallery {
+        margin-top: 72px;
+        font-size: 0;
+        padding: 0 60px;
+        @include clearfix();
+    }
+}
+
+@media ($desktop-width) {
+    
+    .gallery {
+        padding: 0;
+    }
+    
 }

@@ -1,4 +1,9 @@
-.video-button {
-    display: inline-block;
+.video-button--replay {
+    float: left;
+}
+
+.video-button__wrapper {
+    float: right;
+    width: 140px;
 }
 

@@ -1,7 +1,27 @@
 .body-wrapper {
-	width: auto;
-//	margin: 0 auto;
+	width: 320px;
+	margin: 0 auto;
 	box-shadow: 0 11px 26px 0px rgba(50, 50, 50, 0.38);
-    text-align: $align-center;
+    text-align: center;
     @include font();
+    font-family: $font;
+    position: relative;
+}
+
+@media ($tablet-widths) {
+    
+    .body-wrapper {
+        width: 768px;
+        margin: 0 auto;
+    }
+    
+}
+
+@media ($desktop-width) {
+    
+    .body-wrapper {
+        width: 1200px;
+        margin: 0 auto;
+    }
+    
 }
