@@ -9,6 +9,7 @@
 }
 
 @media ($tablet-widths) {
+    
     .features {
         text-align: center;
         @include clearfix();
@@ -20,7 +21,9 @@
 }
 
 @media ($desktop-width) {
+    
     .features {
         margin-bottom: 68px;
     }
+    
 }

@@ -9,7 +9,6 @@
 	position: relative;
 	height: 83px;
 	top: -21px;
-//	left: px;
 	transform: translateX(-50%);
     z-index: 1;
 }
@@ -30,6 +29,7 @@
         transform: translateX(-50%);
         z-index: 1;
     }
+    
 }
 
 @media ($desktop-width) {
@@ -47,4 +47,5 @@
         transform: translateX(-50%);
         z-index: 1;
     }
+    
 }

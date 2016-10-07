@@ -2,6 +2,7 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
     <title>HTML Academy: Седона</title>
     <link rel="stylesheet" type="text/css" href="css/style.css">
   </head>
@@ -67,6 +68,18 @@
           <button class="review-form__send btn" type="submit">Отправить отзыв</button>
           <div class="review-form__note">*-Обязательные поля</div>
         </form>
+        <div class="pop-up-failure pop-up-failure--hidden">
+          <b class="pop-up-failure__title">Что-то пошло не так!</b>
+          <p class="pop-up-failure__text">Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить</p>
+          <button class="pop-up-failure__btn  btn" type="button">Ок</button>
+        </div>
+        <div class="pop-up-success pop-up-success--hidden">
+          <b class="pop-up-success__title">Ваш отзыв отправлен!</b>
+          <p class="pop-up-success__text">Спасибо за ваше участие, ваш отзыв уже поступил к нам. В ближайшее время мы опубликуем его на сайте.</p>
+          <div class="btn-wrapper">
+            <button class="pop-up-success__btn  btn" type="button">Закрыть окно</button>
+          </div>
+        </div>
       </main>
       <footer class="page-footer">
         <section class="page-footer__hashtag">
@@ -82,18 +95,6 @@
           <a class="page-footer__link" href="https://htmlacademy.ru"></a>
         </section>
       </footer>
-    </div>
-    <div class="pop-up-failure pop-up-failure--hidden">
-      <b class="pop-up-failure__title">Что-то пошло не так!</b>
-      <p class="pop-up-failure__text">Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить</p>
-      <button class="pop-up-failure__btn  btn" type="button">Ок</button>
-    </div>
-    <div class="pop-up-success pop-up-success--hidden">
-      <b class="pop-up-success__title">Ваш отзыв отправлен!</b>
-      <p class="pop-up-success__text">Спасибо за ваше участие, ваш отзыв уже поступил к нам. В ближайшее время мы опубликуем его на сайте.</p>
-      <div class="btn-wrapper">
-      <button class="pop-up-success__btn  btn" type="button">Закрыть окно</button>
-      </div>
     </div>
   </body>
 </html>

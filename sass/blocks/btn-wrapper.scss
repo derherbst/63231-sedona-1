@@ -1,12 +1,12 @@
 .btn-wrapper {
     background-color: $bg-lightgrey;
-    height: 98px;
-    padding-left: 20px;
-    padding-right: 20px;
+    padding: 20px 20px;
 }
 
 
 @media ($tablet-widths) {
-    height: 146px;
-    padding: 20px 20px;
+    
+    .btn-wrapper {
+        padding: 44px 90px;
+    }
 }

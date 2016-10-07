@@ -18,8 +18,8 @@
 @media ($tablet-widths) {
     .feature-item {
         float: left;
-        width: 33.333333%;
-        padding: 160px calc(35/768*100%) 18px calc(35/768*100%);
+        width: (100% / 3);
+        padding: 160px (35/768*100%) 18px (35/768*100%);
         box-sizing: border-box;
     }
 }

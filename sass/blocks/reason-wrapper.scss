@@ -1,6 +1,6 @@
 .reason-wrapper {
     width: $block-width;
-//    margin-top: 38px;
+    
     &--grey {
         background-color: $bg-grey;
     }
@@ -11,15 +11,14 @@
     .reason-wrapper {
         width: $block-width;
         margin-top: 47px;
-        
         @include clearfix();
         
         &--grey {
             margin: 0;
-            
             @include clearfix();
         }
     }
+    
 }
 
 @media ($desktop-width) {

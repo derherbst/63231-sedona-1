@@ -2,7 +2,7 @@
     border-top: $grey-border;
     padding-top: 22px;
     margin-bottom: 17px;
-    font-family: 'PT Sans';
+    font-family: $font;
 }
 
 .gallery-item__caption {
@@ -10,7 +10,6 @@
     margin-top: 13px;
     padding: 0 20px;
     margin-bottom: 5px;
-
     @include font(14px, 24px);
 }
 
@@ -36,11 +35,11 @@
 @media ($tablet-widths) {
     
     .gallery-item {
-       display: inline-block;
-       border-top: 0;
-       padding-top: 0;
-       margin-bottom: 0;
-       width: 50%;
+        display: inline-block;
+        border-top: 0;
+        padding-top: 0;
+        margin-bottom: 0;
+        width: 50%;
         
         &:first-child {
             width: 100%;
@@ -57,18 +56,17 @@
     
     .gallery-item__caption-blocks {
         background-color: $bg-lightgrey;
-        
         @include clearfix();
     }
     
     .gallery-item__caption-block--left {
         float: left;
-        width: calc(230/324*100%);
+        width: 230 / 324 * 100%;
     }
     
     .gallery-item__likes {
         float: right;
-        width: calc(50/324*100%);
+        width: 50 / 324 * 100%;
         @include font(14px, 24px);
         margin: 0;
         vertical-align: middle;
@@ -79,16 +77,15 @@
         margin-top: 0;
         @include font(14px, 24px);
         padding-right: 0;
-        
     }
 }
 
 @media ($desktop-width) {
     
     .gallery-item {
-        width: 33.3333333%;
+        width: (100% / 3);
         position: relative;
-        color: $white-text;
+        color: #fff;
       
         &:first-child {
             width: 100%;
@@ -100,18 +97,17 @@
     }
     
     .gallery-item__author {
-        color: $white-text;
+        color: #fff;
     }
     
     .gallery-item__image {
         height: 400px;
-//        background-color: red;
     }
+    
     .gallery-item__caption-blocks {
         position: absolute;
         top: 200px;
         width: 100%;
         background-color: rgba(0,0,0,0.3);
-        
     }
 }

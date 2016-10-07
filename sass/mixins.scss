@@ -27,15 +27,9 @@
 }
 
 
-@mixin button($padding: 17px 0px, $white-text: #fff, $bg-blue: #81b3d2, $no-decoration: none) {
-    padding: $padding;
-    color: $white-text;
+@mixin button($btn-padding: 17px 0px, $bg-blue: #81b3d2) {
+    padding: $btn-padding;
+    color: #fff;
     background-color: $bg-blue;
-    text-decoration: $no-decoration;
-    
-}
-
-@mixin horizontal-padding($left-padding: 20px, $right-padding: 20px) {
-    padding-left: $left-padding;
-    padding-right: $right-padding;
+    text-decoration: none;
 }
