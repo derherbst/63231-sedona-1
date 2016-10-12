@@ -1,18 +1,18 @@
 .interest-block {
     margin-top: 30px;
-    margin-bottom: 50px;
+    margin-bottom: 47px;
     width: $block-width;
 }
 
 .interest-block__title {
     display: block;
-    margin-bottom: 26px;
+    margin-bottom: 20px;
     @include font(21px, 26px);
 }
 
 .interest-block__text {
     display: block;
-    margin-bottom: 40px;
+    margin-bottom: 33px;
     @include font(14px, 24px);
     padding: 0 20px;
 }
@@ -29,7 +29,7 @@
 @media ($tablet-widths) {
     
     .interest-block {
-        margin-top: 55px;
+        margin-top: 57px;
         margin-bottom: 58px;
         box-sizing: border-box;
     }
@@ -40,24 +40,39 @@
     }
     
     .interest-block__text {
-        margin-bottom: 45px;
-        padding: 0 130px;
+        margin-bottom: 41px;
+        padding: 0 185px;
+        text-align: center;
     }
     
     .interest-block__hotel-search {
         @include font(21px, 26px);
         padding-top: 18px;
         padding-bottom: 18px;
-        margin-left: 135px;
-        margin-right: 135px;
+        margin-left: 155px;
+        margin-right: 155px;
     }
+    
 }
 
 @media ($desktop-width) {
     
     .interest-block {
+        margin-bottom: 63px;
         padding-left: 200px;
         padding-right: 200px;
+    }
+    
+    .interest-block__text {
+        margin-bottom: 46px;
+    }
+    
+    .interest-block__hotel-search {
+        @include font(21px, 26px);
+        padding-top: 18px;
+        padding-bottom: 18px;
+        margin-left: 170px;
+        margin-right: 170px;
     }
     
 }

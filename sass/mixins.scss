@@ -20,6 +20,16 @@
     }
 }
 
+@mixin container-fluid() {
+    width: auto;
+    
+    @media #{$tablet-widths} {
+        width: 84%;
+        max-width: 1100px;
+        margin: 0 auto;
+    }
+}
+
 
 @mixin font($body-font-size: 14px, $body-line-height: 21px) {
     font-size: $body-font-size;
@@ -32,4 +42,18 @@
     color: #fff;
     background-color: $bg-blue;
     text-decoration: none;
+    
+    &:hover {
+        background-color: #669ec0;
+    }
+    
+    &:focus {
+        background-color: #5496bd;
+        color: #94b9d2;
+    }
+    
+    &:disabled {
+        background-color: #e5e5e5;
+        color: #ffffff;
+    }
 }

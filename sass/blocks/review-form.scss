@@ -1,47 +1,297 @@
 .review-form {
-    margin-top: 22px;
+    margin-top: 0;
     padding: 0 20px;
 }
 
-
-.review-form__group-fields {
-    padding-bottom: 26px;
-    border-bottom: $grey-border;
+.review-form__title {
+    display: block;
+    margin: 0 auto;
+    padding: 20px 0;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 25px;
+    text-align: center;
+    color: #000;
+    text-transform: uppercase;
 }
 
-.review-form__group-fields:nth-child(5) {
-    border: 0px;
+.review-form__group-fields {
+    position: relative;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    border: none;
+    margin-bottom: 0px;
+    
+    &:first-child {
+        padding-bottom: 5px;
+    }
+    
+    &:nth-child(5)::after {
+        display: none;
+    }
+}
+
+.review-form__group-fields:nth-child(3) .review-form__input, .review-form__group-fields:nth-child(4) .review-form__input {
+    display: none;
+}
+
+.review-form__group-fields:nth-child(3) .review-form__label {
+    position: relative;
+    display: block;
+    padding-left: 75px;
+    font-weight: 700;
+    @include font(18px, 56px);
+    margin-bottom: 15px;
+    text-align: left;
+    color: #000;
+    text-transform: none;
+    
+    &::before {
+        content: "";
+        position: absolute;
+        left: 0;
+        top: 0px;
+        display: block;
+        width: 20px;
+        height: 20px;
+        background-color: #f2f2f2;
+        border: 18px solid #f2f2f2;
+        border-radius: 50%;
+        
+    }
+    
+    &:hover::before {
+        background-color:#e6e6e6;
+        border-color:#e6e6e6;
+    }
+    
+    &:active::before {
+        background-color:#d5d5d5;
+        border-color:#d5d5d5;
+    }
+}
+
+
+
+.review-form__input[checked]+.review-form__label::before {
+    background-color: #333;
+}
+
+.review-form__input[checked]+.review-form__label:hover::before {
+    background-color: #333;
+}
+
+.review-form__input[checked]+.review-form__label:active::before {
+    background-color: #a4a4a4;
+}
+
+.review-form__checkbox-wrapper { 
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-bottom: 0;
+}
+
+.review-form__checkbox-wrapper .review-form__label { 
+    position:relative;
+    display:block;
+    padding-left:80px;
+    font-weight:700;
+    font-size:18px;
+    line-height:76px;
+    text-align:left;
+    color:#000;
+    text-transform:none;
+    white-space:nowrap;
+    -webkit-user-select:none;
+    -moz-user-select:none;
+    -ms-user-select:none;
+    user-select:none
+    
+}
+
+
+.review-form__checkbox-wrapper .review-form__label::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 10px;
+    display: block;
+    width: 56px;
+    height: 56px;
+    background-color: #f2f2f2;
+    border: none;
+    border-radius: 5px;
+}
+
+.review-form__checkbox-wrapper .review-form__input[checked]+.review-form__label::before {
+    background-color: #f2f2f2;
+}
+
+.review-form__checkbox-wrapper .review-form__input:checked+.review-form__label::before {
+    background:#f2f2f2 url(../img/icon-tick.svg) no-repeat 50% 50%
+}
+
+.review-form__checkbox-wrapper .review-form__input[checked]+.review-form__label:hover::before {
+    background-color:#e6e6e6
+}
+
+.review-form__checkbox-wrapper .review-form__input[checked]+.review-form__label:active::before {
+    background-color:#999;
+    opacity:.45;
+}
+
+.checkbox-set__input:disabled+.checkbox-set__title::before,.checkbox-set__input:disabled+.checkbox-set__title:active::before,.checkbox-set__input:disabled+.checkbox-set__title:hover::before {
+    background-color: #ccc;
+    opacity:.1
+}
+
+.review-form__group-fields::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    display: block;
+    width: 100%;
+    height: 1px;
+    background-color: #e6e6e6;
+}
+
+.review-form__group-fields:last-child::after {
+    display: none;
+}
+
+.review-form__raws-wrapper {
+    display: flex;
+    margin-bottom: 20px;
+    
+    &--contacts {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+    
+    &--contacts .review-form__label {
+        margin-bottom: 5px;
+        margin-left: 20px;
+        line-height: 25px;
+        text-align: left;
+    }
+}
+
+.review-form__contacts-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 100%;
 }
 
 .review-form__title {
-    padding-top: 20px;
     display: block;
-    width: 100%;
-    font-weight: bold;
+    margin: 0px;
+    padding: 20px 0;
+    font-weight: 700;
+    text-align: center;
+    color: #000;
+    text-transform: uppercase;
     @include font(18px, 26px);
+    font-family: $font;
+    letter-spacing: normal;
 }
 
 .review-form__label {
     display: block;
-    text-align: justify;
-    width: auto;
+    padding-right: 20px;
+    line-height: 58px;
+    color: #7d7d7d;
 }
 
 .review-form__input {
     background-color: $bg-lightgrey;
-    width: auto;
+    font-family: $font;
+    @include font(18px, 26px);
+    font-weight: 700;
+    flex-grow: 1;
+    width: 1%;
+    height: 58px;
+    margin: 0;
+    padding: 0 20px;
+    color: #000;
+    text-transform: none;
+    border: none;
+    outline: none;
+    background-repeat: no-repeat;
+    background-position: 95% 50%;
+    background-size: 19px 19px;
+    
+    &--tel {
+        background-image: url(../img/icon-phone.svg);
+    }
+    
+    &--e-mail {
+        background-image: url(../img/icon-mail.svg);
+    }
+    
+    &--tel, &--e-mail {
+        width: 100%;
+        box-sizing: border-box;
+        padding-right: 75px;
+    }
+    
+    &:hover {
+        background-color:#ccc;
+    }
+    
+    &:focus {
+        background-color:#fff;
+        box-shadow:inset 0 0 0 4px #ccc
+    }
+}
+
+.review-form__error {
+    color: #ff5c5c;
+    text-align: left;
+    padding-top: 12px;
+    padding-left: 20px;
+    text-transform: none;
+    @include font(14px, 26px);
 }
 
 .review-form__textarea {
+    box-sizing: border-box;
     background-color: $bg-lightgrey;
-    height: 160px;
-    margin: 0;
+    min-height: 160px;
+    display: flex;
     width: 100%;
+    padding-top: 10px;
+    background-color: $bg-lightgrey;
+    font-family: $font;
+    @include font(18px, 26px);
+    font-weight: 700;
+    flex-grow: 1;
+    margin: 0;
+    padding: 10px 20px;
+    color: #000;
+    text-transform: none;
+    border: none;
+    outline: none;
+    margin-bottom: 20px;
+    
+    &:hover {
+        background-color:#ccc;
+    }
+    
+    &:focus {
+        background-color:#fff;
+        box-shadow:inset 0 0 0 4px #ccc
+    }
 }
 
 .review-form__send {
     padding-left: 60px;
     padding-right: 60px;
+    margin-top: 30px;
 }
 
 .review-form__note {
@@ -51,34 +301,100 @@
 @media ($tablet-widths) {
     
     .review-form {
-        font-size: 0;
         padding: 0 60px;
         margin-top: 37px;
-        font-family: 'PT Sans';
-        @include clearfix();
+        font-family: $font;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    
+    .review-form__title {
+        @include font(21px, 26px);
+        padding-left: 50px;
+        padding-right: 50px;
+    }
+    
+    .review-form__title span {
+        display: none;
+    }
+    
+    
+    .review-form__label {
+        font-size: 14px;
     }
     
     .review-form__group-fields {
+        border-top: $grey-border; 
         margin: 0;
         border-bottom: 0;
         @include font(18px, 26px);
         width: 100%;
-        min-height: 300px;
-        font-family: 'PT Sans';
+        font-family: $font;
+        
+        &::after {
+            display: none;
+        }
+    }
+    
+    .review-form__group-fields:first-child, .review-form__group-fields:nth-child(3) {
+        border-top: 0;
+    }
+    
+    .review-form__group-fields:first-child .review-form__title {
+        text-align: left;
+        padding-left: 0;
+        padding-right: 0;
+    }
+      
+    .review-form__group-fields:nth-child(3) .review-form__title {
+        text-align: left;
+        padding-left: 0;
+        padding-right: 0;
     }
     
     .review-form__group-fields:first-child {
-        float: left;
+        order: 2;
         width: 50%;
     }
     
     .review-form__group-fields:nth-child(2) {
-        float: right;
+        order: 3;
+        
+    }
+    
+    .review-form__group-fields:nth-child(3) {
+        order: 1;
         width: 50%;
     }
     
+    .review-form__group-fields:nth-child(4) {
+        order: 4;
+    }
+    
     .review-form__group-fields:nth-child(5) {
-        min-height: 200px;
+        order: 5;
+    }
+    
+    .review-form__group-fields:last-child {
+        order: 6;
+    }
+    
+    .review-form__checkbox-wrapper {
+        margin: 0 100px;
+        align-content: space-between;
+    }
+    
+    .review-form__checkbox-wrapper .review-form__label:last-child {
+        padding-right: 0px;
+    }
+    
+    .review-form__send {
+        order: 7;
+    }
+    
+    .review-form__note {
+        order: 8;
     }
     
     .review-form__textarea {
@@ -92,13 +408,13 @@
     
     .review-form__send {
         float: left;
+        margin-top: 0;
     }
     
     .review-form__note {
         display: block;
         
         @include font(14px, 26px);
-        float: right;
         padding-top: 10px;
     }
     
@@ -110,6 +426,12 @@
     .review-form__send {
         padding-left: 200px;
         padding-right: 200px;
+    }
+    
+    
+    .review-form__checkbox-wrapper {
+        margin: 0;
+        align-content: space-between;
     }
     
 }

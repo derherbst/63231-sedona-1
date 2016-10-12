@@ -1,9 +1,44 @@
 .video-button--replay {
-    float: left;
+    margin-left: 23px;
 }
 
-.video-button__wrapper {
-    float: right;
-    width: 140px;
+.video-button--comment {
+    margin-left: auto;
 }
 
+.video-button--comment, .video-button--width {
+    margin-right: 23px;
+}
+
+
+@media ($tablet-widths) {
+    
+    .video-button--replay {
+        margin-left: 35px;
+    }
+
+    .video-button--comment {
+        margin-right: 30px;
+    }
+    
+    .video-button--width {
+        margin-right: 38px;
+    }
+    
+}
+
+@media ($desktop-width) {
+    
+    .video-button--replay {
+        margin-left: 35px;
+    }
+
+    .video-button--comment {
+        margin-right: 31px;
+    }
+    
+    .video-button--width {
+        margin-right: 42px;
+    }
+    
+}

@@ -1,5 +1,5 @@
 .gallery {
-    margin-top: 30px;
+    margin-top: 24px;
     @include font(14px, 26px);
 }
 
@@ -10,6 +10,9 @@
         font-size: 0;
         padding: 0 60px;
         @include clearfix();
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: flex-start;
     }
 }
 

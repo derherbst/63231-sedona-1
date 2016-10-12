@@ -1,4 +1,5 @@
 .pop-up-failure {
+    display: none;
     width: $mobile-width;
     text-align: center;
     padding: 43px 20px 35px;
@@ -30,6 +31,7 @@
 @media ($tablet-widths) {
     
     .pop-up-failure {
+        display: none;
         z-index: 3;
         left: 215px;
         bottom: 620px;

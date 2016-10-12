@@ -5,7 +5,8 @@
     margin-right: 20px;
     padding-top: 23px;
     padding-bottom: 23px;
-    @include clearfix();
+    display: flex;
+    flex-direction: row;
 }
 
 @media ($tablet-widths) {
